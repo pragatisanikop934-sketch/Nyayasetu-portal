@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NyayaSetu helps people learn about legal rights and find official legal aid and complaint resources in India.">
+  <title>NyayaSetu | Legal Aid & Rights Awareness</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="NyayaSetu home">
+        <span class="brand-mark">N</span>
+        <span><strong>NyayaSetu</strong><small>Legal Aid & Rights Awareness</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav id="mainNav" aria-label="Main navigation">
+        <a href="#rights">Know Your Rights</a>
+        <a href="#legal-aid">Free Legal Aid</a>
+        <a href="#guides">Complaint Guides</a>
+        <a href="#help">Get Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">LEGAL AWARENESS FOR EVERYONE</p>
+          <h1>Know your rights.<br><span>Find the right help.</span></h1>
+          <p class="hero-copy">Clear, simple information to help you understand your rights and find trusted legal support in India.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#rights">Explore your rights</a>
+            <a class="button button-light" href="#legal-aid">Find free legal aid</a>
+          </div>
+          <p class="small-note">Information is a starting point—not a substitute for advice from a qualified lawyer.</p>
+        </div>
+        <div class="hero-panel">
+          <div class="panel-icon">⚖</div>
+          <h2>Justice should be accessible.</h2>
+          <p>Learn the basics, understand possible next steps, and connect with official services.</p>
+          <div class="panel-rule"></div>
+          <div class="panel-stat"><strong>15100</strong><span>National Legal Aid Helpline</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-band">
+      <div class="container search-inner">
+        <div><h2>What do you need help with?</h2><p>Search topics covered on this portal.</p></div>
+        <label class="search-box"><span class="sr-only">Search legal topics</span><input id="siteSearch" type="search" placeholder="Try “consumer”, “women”, “cybercrime”…"><button id="clearSearch" type="button" aria-label="Clear search">×</button></label>
+      </div>
+      <p id="searchStatus" class="container search-status" aria-live="polite"></p>
+    </section>
+
+    <section class="section container" id="rights">
+      <div class="section-heading">
+        <p class="eyebrow">START WITH THE BASICS</p>
+        <h2>Know your rights</h2>
+        <p>Explore introductory information on important areas of law. Select a card to read practical starting points.</p>
+      </div>
+      <div class="card-grid" id="rightsGrid">
+        <article class="info-card searchable" data-keywords="fundamental constitution equality freedom rights">
+          <div class="card-icon">🏛️</div><h3>Constitutional rights</h3>
+          <p>Learn about equality, freedoms, protection of life and personal liberty, and constitutional remedies.</p>
+          <button class="text-button" data-open="constitutional">Read overview →</button>
+        </article>
+        <article class="info-card searchable" data-keywords="women women safety domestic violence workplace rights">
+          <div class="card-icon">♀</div><h3>Women's rights</h3>
+          <p>Find starting points on safety, protection from violence, workplace rights and support services.</p>
+          <button class="text-button" data-open="women">Read overview →</button>
+        </article>
+        <article class="info-card searchable" data-keywords="children child protection education rights">
+          <div class="card-icon">🧒</div><h3>Children's rights</h3>
+          <p>Understand child protection, education and where to report concerns about a child's safety.</p>
+          <button class="text-button" data-open="children">Read overview →</button>
+        </article>
+        <article class="info-card searchable" data-keywords="consumer fraud product service refund rights">
+          <div class="card-icon">🛍️</div><h3>Consumer rights</h3>
+          <p>Learn about consumer protection and the official route for raising a consumer grievance.</p>
+          <button class="text-button" data-open="consumer">Read overview →</button>
+        </article>
+        <article class="info-card searchable" data-keywords="worker labour wages workplace rights">
+          <div class="card-icon">🧰</div><h3>Worker rights</h3>
+          <p>Explore basic information about wages, workplace safety and labour-related assistance.</p>
+          <button class="text-button" data-open="workers">Read overview →</button>
+        </article>
+        <article class="info-card searchable" data-keywords="digital cybercrime online fraud cyber safety">
+          <div class="card-icon">🔐</div><h3>Digital safety</h3>
+          <p>Learn what to do after online financial fraud, cyber harassment or another cyber incident.</p>
+          <button class="text-button" data-open="digital">Read overview →</button>
+        </article>
+      </div>
+      <p id="noResults" class="no-results" hidden>No matching topic found. Try a different keyword.</p>
+    </section>
+
+    <section class="aid-section" id="legal-aid">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">LEGAL SUPPORT</p>
+          <h2>Free legal aid may be available to you.</h2>
+          <p>India's legal services authorities provide free legal services to people who meet the eligibility criteria under the Legal Services Authorities Act. Eligibility can depend on factors such as category, income and the nature of the case.</p>
+          <a class="button button-primary" href="https://nalsa.gov.in/" target="_blank" rel="noopener">Visit NALSA official website ↗</a>
+        </div>
+        <div class="aid-steps">
+          <h3>How to get started</h3>
+          <ol>
+            <li><strong>Check eligibility</strong><span>Read the current criteria on the official legal services website.</span></li>
+            <li><strong>Contact the authority</strong><span>Approach your District Legal Services Authority (DLSA), Taluk Legal Services Committee or State Legal Services Authority.</span></li>
+            <li><strong>Explain your issue</strong><span>Share relevant facts and documents with the legal services authority.</span></li>
+            <li><strong>Follow official guidance</strong><span>Ask about the application process and next steps for your matter.</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="guides">
+      <div class="section-heading">
+        <p class="eyebrow">PRACTICAL NEXT STEPS</p>
+        <h2>Complaint guidance</h2>
+        <p>These are general starting points. For emergencies or immediate danger, contact local emergency services.</p>
+      </div>
+      <div class="guide-grid">
+        <article class="guide-card searchable" data-keywords="cybercrime online fraud financial fraud cyber complaint">
+          <span class="guide-tag">ONLINE SAFETY</span><h3>Cybercrime or online financial fraud</h3>
+          <ul><li>For financial cyber fraud, contact your bank/payment provider immediately.</li><li>Keep transaction IDs, screenshots, phone numbers and messages.</li><li>Report through the official National Cyber Crime Reporting Portal.</li></ul>
+          <a href="https://cybercrime.gov.in/" target="_blank" rel="noopener">Open cybercrime portal ↗</a>
+        </article>
+        <article class="guide-card searchable" data-keywords="consumer complaint product service refund">
+          <span class="guide-tag">CONSUMER SUPPORT</span><h3>Product or service complaint</h3>
+          <ul><li>Keep bills, order details, warranty and communication records.</li><li>First contact the seller or service provider and keep the response.</li><li>Use the National Consumer Helpline for grievance guidance.</li></ul>
+          <a href="https://consumerhelpline.gov.in/" target="_blank" rel="noopener">Open consumer helpline ↗</a>
+        </article>
+        <article class="guide-card searchable" data-keywords="women child emergency violence safety help">
+          <span class="guide-tag">SAFETY & PROTECTION</span><h3>Immediate safety concern</h3>
+          <ul><li>If someone is in immediate danger, call India's emergency number 112.</li><li>Move to a safer place if possible and contact a trusted person.</li><li>For legal support, contact the relevant legal services authority.</li></ul>
+          <a href="https://112.gov.in/" target="_blank" rel="noopener">Emergency response information ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="help-section" id="help">
+      <div class="container">
+        <div class="section-heading light-heading">
+          <p class="eyebrow">IMPORTANT CONTACTS</p><h2>Find official help</h2>
+          <p>Check the official website for current availability, process and applicable charges (if any).</p>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-card" href="https://nalsa.gov.in/" target="_blank" rel="noopener"><span>⚖️</span><strong>15100</strong><small>National Legal Aid Helpline</small><em>NALSA website ↗</em></a>
+          <a class="contact-card" href="https://112.gov.in/" target="_blank" rel="noopener"><span>🚨</span><strong>112</strong><small>Emergency response</small><em>Official website ↗</em></a>
+          <a class="contact-card" href="https://cybercrime.gov.in/" target="_blank" rel="noopener"><span>💻</span><strong>Cybercrime</strong><small>Online reporting portal</small><em>Official website ↗</em></a>
+          <a class="contact-card" href="https://consumerhelpline.gov.in/" target="_blank" rel="noopener"><span>🛒</span><strong>1915</strong><small>National Consumer Helpline</small><em>Official website ↗</em></a>
+        </div>
+        <p class="contact-footnote">Helpline details and service rules can change. Verify them on the linked official websites before relying on them.</p>
+      </div>
+    </section>
+
+    <section class="section container faq-section" id="faq">
+      <div class="section-heading"><p class="eyebrow">QUICK ANSWERS</p><h2>Frequently asked questions</h2></div>
+      <details><summary>Is legal aid really free?</summary><p>Free legal services are available to people who qualify under the law. Contact an official legal services authority to confirm eligibility and the process for your situation.</p></details>
+      <details><summary>Can this website provide legal advice?</summary><p>No. NyayaSetu is an educational student project. It provides general awareness and links to official services, not individual legal advice or representation.</p></details>
+      <details><summary>What should I do if I do not know which authority to contact?</summary><p>You can start with NALSA or your State/District Legal Services Authority and explain the issue. They can guide you to the appropriate service.</p></details>
+      <details><summary>Do I need to upload personal documents here?</summary><p>No. This website does not collect legal case documents or sensitive personal information. Share documents only through verified official channels when required.</p></details>
+    </section>
+
+    <section class="disclaimer">
+      <div class="container"><strong>Important notice</strong><p>This portal is an educational societal-project website. It is not a government website, law firm or emergency service. Content is general information, may not cover every situation and should be checked against current official sources. For advice about a specific case, contact a qualified lawyer or authorised legal services authority. Do not submit confidential or sensitive information through this site.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap"><div><strong>NyayaSetu</strong><p>Legal awareness made simpler.</p></div><div class="footer-links"><a href="#home">Back to top ↑</a><a href="#faq">FAQs</a><a href="#help">Official help</a></div></div>
+    <div class="container copyright">© <span id="year"></span> NyayaSetu · Student societal project</div>
+  </footer>
+
+  <dialog id="infoDialog" class="info-dialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close">×</button>
+    <p class="eyebrow">RIGHTS OVERVIEW</p><h2 id="dialogTitle"></h2><div id="dialogBody"></div>
+    <p class="dialog-note">This is a brief educational overview, not legal advice. Check current law and consult an authorised professional for your situation.</p>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
